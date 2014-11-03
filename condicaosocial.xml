@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<file-format>
+    <converter name="long"    class="com.blackbear.flatworm.converters.CoreConverters" method="convertLong"    return-type="java.lang.Long"/>
+    <converter name="char"    class="com.blackbear.flatworm.converters.CoreConverters" method="convertChar"    return-type="java.lang.String"/>
+    <record name="novocondicaosocial1">
+        <record-ident>
+            <length-ident minlength="46" maxlength="46"/>
+        </record-ident>
+        <record-definition>
+            <bean name="condicaosocial" class="CondicaoSocial2010"/>
+            <line>
+                <record-element length="12" beanref="condicaosocial.numeroInscricao" type="long"/>
+                <record-element length="1"  beanref="condicaosocial.inQse"           type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q01"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q02"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q03"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q04"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q05"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q06"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q07"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q08"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q09"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q10"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q11"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q12"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q13"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q14"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q15"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q16"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q17"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q18"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q19"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q20"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q21"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q22"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q23"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q24"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q25"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q26"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q27"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q28"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q29"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q30"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q31"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q32"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q33"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+            </line>
+        </record-definition>
+    </record>
+    <record name="novocondicaosocial2">
+        <record-ident>
+            <length-ident minlength="47" maxlength="47"/>
+        </record-ident>
+        <record-definition>
+            <bean name="condicaosocial" class="CondicaoSocial2010"/>
+            <line>
+                <record-element length="12" beanref="condicaosocial.numeroInscricao" type="long"/>
+                <record-element length="1"  beanref="condicaosocial.inQse"           type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q01"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q02"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q03"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q04"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q05"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q06"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q07"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q08"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q09"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q10"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q11"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q12"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q13"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q14"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q15"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q16"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q17"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q18"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q19"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q20"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q21"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q22"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q23"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q24"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q25"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q26"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q27"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q28"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q29"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q30"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q31"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q32"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q33"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q34"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+            </line>
+        </record-definition>
+    </record>
+    <record name="novocondicaosocial3">
+        <record-ident>
+            <length-ident minlength="13" maxlength="13"/>
+        </record-ident>
+        <record-definition>
+            <bean name="condicaosocial" class="CondicaoSocial2010"/>
+            <line>
+                <record-element length="12" beanref="condicaosocial.numeroInscricao" type="long"/>
+                <record-element length="1"  beanref="condicaosocial.inQse"           type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+            </line>
+        </record-definition>
+    </record>
+    <record name="novocondicaosocial4">
+        <record-definition>
+            <bean name="condicaosocial" class="CondicaoSocial2010"/>
+            <line>
+                <record-element length="12" beanref="condicaosocial.numeroInscricao" type="long"/>
+                <record-element length="1"  beanref="condicaosocial.inQse"           type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q01"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q02"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q03"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q04"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q05"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q06"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q07"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q08"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q09"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q10"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q11"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q12"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q13"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q14"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q15"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q16"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q17"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q18"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q19"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q20"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q21"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q22"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q23"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q24"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q25"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q26"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q27"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q28"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q29"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q30"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q31"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q32"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q33"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q34"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q35"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q36"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q37"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q38"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q39"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q40"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q41"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q42"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q43"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q44"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q45"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q46"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q47"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q48"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q49"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q50"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q51"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q52"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q53"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q54"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q55"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q56"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+                <record-element length="1"  beanref="condicaosocial.q57"             type="char">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="X"/>
+                </record-element>
+            </line>
+        </record-definition>
+    </record>
+</file-format>

@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<file-format>
+    <converter name="int"     class="com.blackbear.flatworm.converters.CoreConverters" method="convertInteger" return-type="java.lang.Integer"/>
+    <converter name="long"    class="com.blackbear.flatworm.converters.CoreConverters" method="convertLong"    return-type="java.lang.Long"/>
+    <converter name="char"    class="com.blackbear.flatworm.converters.CoreConverters" method="convertChar"    return-type="java.lang.String"/>
+    <converter name="decimal" class="com.blackbear.flatworm.converters.CoreConverters" method="convertDecimal" return-type="java.lang.Double"/>
+    <record name="novoinscrito1">
+        <record-ident>
+            <length-ident minlength="765" maxlength="765"/>
+        </record-ident>
+        <record-definition>
+            <bean name="inscrito" class="InscritoEnem2010"/>
+            <line>
+                <record-element length="12"  beanref="inscrito.numeroInscricao" type="long"/>
+                <record-element length="4"   beanref="inscrito.ano"             type="int"/>
+                <record-element length="3"   beanref="inscrito.idade"           type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.sexo"            type="char"/>
+                <record-element length="7"   beanref="inscrito.codMunicInsc"    type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="150" beanref="inscrito.nomeMunicInsc"   type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="2"   beanref="inscrito.ufInsc"          type="char"/>
+                <record-element length="1"   beanref="inscrito.stConclusao"     type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.tipoEnsino"      type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.inCertificado"   type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="-1"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.inBraille"       type="int"/>
+                <record-element length="1"   beanref="inscrito.inAmpliada"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inLedor"         type="int"/>
+                <record-element length="1"   beanref="inscrito.inAcesso"        type="int"/>
+                <record-element length="1"   beanref="inscrito.inTranscricao"   type="int"/>
+                <record-element length="1"   beanref="inscrito.inLibras"        type="int"/>
+                <record-element length="1"   beanref="inscrito.inUnidPrisional" type="int"/>
+                <record-element length="1"   beanref="inscrito.inBaixaVisao"    type="int"/>
+                <record-element length="1"   beanref="inscrito.inCegueira"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inDefAuditiva"   type="int"/>
+                <record-element length="1"   beanref="inscrito.inDefFisica"     type="int"/>
+                <record-element length="1"   beanref="inscrito.inDefMental"     type="int"/>
+                <record-element length="1"   beanref="inscrito.inDeficitAtenc"  type="int"/>
+                <record-element length="1"   beanref="inscrito.inDislexia"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inGestante"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inLactante"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inLeituraLabial" type="int"/>
+                <record-element length="1"   beanref="inscrito.inSabatista"     type="int"/>
+                <record-element length="1"   beanref="inscrito.inSurdez"        type="int"/>
+                <record-element length="1"   beanref="inscrito.estadoCivil"     type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="-1"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.corRaca"         type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="-1"/>
+                </record-element>
+                <record-element length="8"   beanref="inscrito.codEscola"       type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="7"   beanref="inscrito.codMunicEscola"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="150" beanref="inscrito.nomeMunicEscola" type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="2"   beanref="inscrito.ufEscola"        type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.dependAdmEscola" type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.localizacEscola" type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.sitFuncEscola"   type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="7"   beanref="inscrito.codMunicProva"   type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="150" beanref="inscrito.nomeMunicProva"  type="char"/>
+                <record-element length="2"   beanref="inscrito.ufMunicProva"    type="char"/>
+                <record-element length="1"   beanref="inscrito.presCiencNatur"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.presCiencHuman"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.presLinguagens"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.presMatematica" type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCiencNatur"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCiencHuman"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaLinguagens"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaMatematica"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respCiencNatur"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respCiencHuman"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respLinguagens"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respMatematica"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaCiencNat" type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaCiencHum" type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaLinguage" type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaMatemat"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.tpLingua"        type="int"/>
+            </line>
+        </record-definition>
+    </record>
+    <record name="novoinscrito2">
+        <record-definition>
+            <bean name="inscrito" class="InscritoEnem2010"/>
+            <line>
+                <record-element length="12"  beanref="inscrito.numeroInscricao" type="long"/>
+                <record-element length="4"   beanref="inscrito.ano"             type="int"/>
+                <record-element length="3"   beanref="inscrito.idade"           type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.sexo"            type="char"/>
+                <record-element length="7"   beanref="inscrito.codMunicInsc"    type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="150" beanref="inscrito.nomeMunicInsc"   type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="2"   beanref="inscrito.ufInsc"          type="char"/>
+                <record-element length="1"   beanref="inscrito.stConclusao"     type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.tipoEnsino"      type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.inCertificado"   type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="-1"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.inBraille"       type="int"/>
+                <record-element length="1"   beanref="inscrito.inAmpliada"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inLedor"         type="int"/>
+                <record-element length="1"   beanref="inscrito.inAcesso"        type="int"/>
+                <record-element length="1"   beanref="inscrito.inTranscricao"   type="int"/>
+                <record-element length="1"   beanref="inscrito.inLibras"        type="int"/>
+                <record-element length="1"   beanref="inscrito.inUnidPrisional" type="int"/>
+                <record-element length="1"   beanref="inscrito.inBaixaVisao"    type="int"/>
+                <record-element length="1"   beanref="inscrito.inCegueira"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inDefAuditiva"   type="int"/>
+                <record-element length="1"   beanref="inscrito.inDefFisica"     type="int"/>
+                <record-element length="1"   beanref="inscrito.inDefMental"     type="int"/>
+                <record-element length="1"   beanref="inscrito.inDeficitAtenc"  type="int"/>
+                <record-element length="1"   beanref="inscrito.inDislexia"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inGestante"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inLactante"      type="int"/>
+                <record-element length="1"   beanref="inscrito.inLeituraLabial" type="int"/>
+                <record-element length="1"   beanref="inscrito.inSabatista"     type="int"/>
+                <record-element length="1"   beanref="inscrito.inSurdez"        type="int"/>
+                <record-element length="1"   beanref="inscrito.estadoCivil"     type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="-1"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.corRaca"         type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="-1"/>
+                </record-element>
+                <record-element length="8"   beanref="inscrito.codEscola"       type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="7"   beanref="inscrito.codMunicEscola"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="150" beanref="inscrito.nomeMunicEscola" type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="2"   beanref="inscrito.ufEscola"        type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.dependAdmEscola" type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.localizacEscola" type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.sitFuncEscola"   type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="7"   beanref="inscrito.codMunicProva"   type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="150" beanref="inscrito.nomeMunicProva"  type="char"/>
+                <record-element length="2"   beanref="inscrito.ufMunicProva"    type="char"/>
+                <record-element length="1"   beanref="inscrito.presCiencNatur"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.presCiencHuman"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.presLinguagens"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.presMatematica" type="int">
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCiencNatur"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCiencHuman"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaLinguagens"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaMatematica"  type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respCiencNatur"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respCiencHuman"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respLinguagens"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="45"  beanref="inscrito.respMatematica"  type="char">
+                    <conversion-option name="justify" value="left"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaCiencNat" type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaCiencHum" type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaLinguage" type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="3"   beanref="inscrito.idProvaMatemat"  type="int">
+                    <conversion-option name="justify" value="right"/>
+                </record-element>
+                <record-element length="1"   beanref="inscrito.tpLingua"        type="int"/>
+                <record-element length="45"  beanref="inscrito.gabaCiencNatur"  type="char"/>
+                <record-element length="45"  beanref="inscrito.gabaCiencHuman"  type="char"/>
+                <record-element length="50"  beanref="inscrito.gabaLinguagens"  type="char"/>
+                <record-element length="45"  beanref="inscrito.gabaMatematica"  type="char"/>
+                <record-element length="1"   beanref="inscrito.situacaoRedacao" type="char"/>
+                <record-element length="9"   beanref="inscrito.notaCompet1"     type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCompet2"     type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCompet3"     type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCompet4"     type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaCompet5"     type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+                <record-element length="9"   beanref="inscrito.notaRedacao"     type="decimal">
+                    <conversion-option name="decimal-places" value="2"/>
+                    <conversion-option name="decimal-implied" value="false"/>
+                    <conversion-option name="justify" value="right"/>
+                    <conversion-option name="default-value" value="0.00"/>
+                </record-element>
+            </line>
+        </record-definition>
+    </record>
+</file-format>
